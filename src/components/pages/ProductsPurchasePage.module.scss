@@ -1,0 +1,29 @@
+@import '../../styles/extends.module';
+
+.productsPurchasePage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../images/bg.jpg');
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title {
+  @extend %h1Glitching;
+  top: 2vh;
+}
+
+.sectionFadeOut {
+  animation: sectionFadeOut 0.3s forwards;
+}
+
+.sectionFadeIn {
+  animation: sectionFadeIn 0.7s forwards;
+}
+
+.withFadeIn {
+  position: absolute;
+}

@@ -1,0 +1,61 @@
+@import '../../../../styles/extends.module';
+
+.summaryContainer {
+  @extend %sectionContainer;
+  padding-bottom: 20px;
+}
+
+.orderInfo {
+  font-size: $font-size3;
+  margin-bottom: 20px;
+}
+
+ul {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: $font-size3;
+  list-style-type: none;
+  padding: 20px 0 0 0;
+
+  &:last-child {
+    margin-top: 10px;
+  }
+
+  li {
+    font-size: $font-size2;
+    text-align: center;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+}
+
+
+@media (max-width: $tablet-max-width) {
+  .summaryContainer {
+    width: 65vw;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .summaryContainer {
+    width: 80vw;
+  }
+
+  .orderInfo {
+    font-size: $font-size2;
+  }
+
+  ul {
+    font-size: $font-size2;
+  }
+
+  ul > li {
+    font-size: $font-size1;
+  }
+
+}
+
+

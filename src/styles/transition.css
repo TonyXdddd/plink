@@ -1,0 +1,21 @@
+.section-enter {
+    opacity: 0;
+}
+.section-enter-active {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.section-exit-active {
+    animation: test 0.3s forwards;
+}
+
+@keyframes test {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0
+    }
+}

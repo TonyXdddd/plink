@@ -1,0 +1,89 @@
+@import '../../../../styles/extends.module';
+
+.formWrapper {
+  @extend %sectionContainer;
+}
+
+.form {
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.input {
+  display: block;
+  margin: 0 auto 3px;
+  width: 80%;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.3s;
+  background-color: transparent;
+  color: $color1;
+  border: 2px solid $color1--delicate;
+  box-shadow: 5px 4px 24px 0 $color-boxShadow3;
+
+  &:focus {
+    box-shadow: 5px 4px 24px 0 $color-boxShadow4;
+  }
+}
+
+.label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: center;
+  color: $color1--delicate;
+  opacity: 0.5;
+}
+
+.error {
+  position: absolute;
+  min-width: 200px;
+  text-align: center;
+  font-size: $font-size2;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+  color: $colorErrorText;
+  text-shadow: $color-textShadow4 5px 4px 15px;
+}
+
+.confirmButton {
+  font-family: $font-family1;
+  font-weight: 400;
+  display: block;
+  margin: 40px auto 10px;
+  border: 2px solid $color2--delicate;
+  background-color: transparent;
+  color: $color2--intensive;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.3s;
+  font-size: $font-size2;
+  box-shadow: 5px 4px 24px 0 $color-boxShadow5;
+
+  &:active {
+    color: $color4;
+    border: 2px solid $color4--delicate;
+    transform: translateY(20%);
+    box-shadow: 5px 4px 24px 0 $color-boxShadow5;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .formWrapper {
+    width: 65vw;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .formWrapper {
+    width: 80vw;
+  }
+
+  .error {
+    font-size: $font-size1;
+  }
+}

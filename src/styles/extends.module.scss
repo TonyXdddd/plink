@@ -1,0 +1,73 @@
+//I selected this file to import all of style files
+@import './variables.module';
+@import './animations.module';
+@import './fonts.modules';
+
+%control-units-interface {
+  border-radius: 15px;
+  outline: none;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+%h1Glitching {
+  position: absolute;
+  display: flex;
+  left: 1%;
+  right: 1%;
+  justify-content: center;
+  font-family: $font-family2;
+  font-size: $font-size5;
+  color: $color1;
+  text-align: center;
+  text-shadow: $color1--delicate 5px 5px 15px;
+  box-shadow: 5px 4px 24px 0 $color-boxShadow7;
+  font-weight: 700;
+  user-select: none;
+  animation: title-glitching 7s infinite;
+}
+
+%triangleArrow {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  top: 25%;
+  right: -28px;
+  border: 8px solid transparent;
+  border-top: 11px solid $color2;
+}
+
+%hintText {
+  &:after {
+    content: 'Buy';
+    color: $color2;
+    display: block;
+    position: absolute;
+    top: 20%;
+    margin-left: calc(60px + 5vw);
+    opacity: 0;
+    transition: 0.3s;
+    width: 100%;
+  }
+}
+
+%sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  transition: 0.3s;
+  text-shadow: $color-textShadow2 1px 1px 12px;
+  width: 50vw;
+  background-color: $color5;
+  font-size: $font-size2;
+  color: $color1--intensive;
+  box-shadow: 5px 9px 16px -3px $color-boxShadow1;
+  border-radius: 5px;
+}
