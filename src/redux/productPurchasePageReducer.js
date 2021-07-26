@@ -4,7 +4,6 @@
 // sequentially, with the removal of the previous one, taking into account the actions of the user.
 
 //STACK - React FC/Hooks, Redux, React-Redux, Reselect, Formic, React-Toastify
-// I have not found any use for Thunks or Sagas, since I am not using any explicit asynchronous logic in this task.
 
 export const SORT_BY_NAME = 'SORT_BY_NAME';
 export const SORT_BY_SKU = 'SORT_BY_SKU';
